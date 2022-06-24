@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:weathet_app/api/weather_api.dart';
-import 'package:weathet_app/models/weather_forecast_hourly.dart';
+import 'package:e_weather/api/weather_api.dart';
+import 'package:e_weather/models/weather_forecast_hourly.dart';
 
 class MainScreenModel extends ChangeNotifier {
   WeatherForecastModel? _forecastObject;

@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:weathet_app/models/weather_forecast_hourly.dart';
-import 'package:weathet_app/utils/constants.dart';
-import 'package:weathet_app/utils/location.dart';
+import 'package:e_weather/models/weather_forecast_hourly.dart';
+import 'package:e_weather/utils/constants.dart';
+import 'package:e_weather/utils/location.dart';
 
 class WeatherApi {
   final _client = HttpClient();
@@ -21,11 +21,9 @@ class WeatherApi {
     }
   }
 
-  Future<WeatherForecastModel> fetchWeatherForecast(
-      {String? cityName}) async {
-    
+  Future<WeatherForecastModel> fetchWeatherForecast({String? cityName}) async {
     Map<String, String> parameters;
-    if (cityName!=null && cityName.isNotEmpty) {
+    if (cityName != null && cityName.isNotEmpty) {
       parameters = {
         'key': Constants.WEATHER_APP_ID,
         'q': cityName,
@@ -33,7 +31,7 @@ class WeatherApi {
       };
     } else {
       UserLocation location = UserLocation();
-    await location.determinePosition();
+      await location.determinePosition();
       String fullLocation = '${location.latitude},${location.longitude}';
       parameters = {
         'key': Constants.WEATHER_APP_ID,

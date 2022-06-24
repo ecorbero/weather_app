@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:weathet_app/ui/widgets/main_screen/main_screen_model.dart';
+import 'package:e_weather/ui/widgets/main_screen/main_screen_model.dart';
 
-import 'package:weathet_app/ui/widgets/main_screen/main_screen_widget.dart';
+import 'package:e_weather/ui/widgets/main_screen/main_screen_widget.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

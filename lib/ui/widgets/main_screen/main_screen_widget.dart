@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
-import 'package:weathet_app/ui/widgets/main_screen/main_screen_model.dart';
-import 'package:weathet_app/utils/constants.dart';
+import 'package:e_weather/ui/widgets/main_screen/main_screen_model.dart';
+import 'package:e_weather/utils/constants.dart';
 
 class MainScreenWidget extends StatelessWidget {
   const MainScreenWidget({Key? key}) : super(key: key);

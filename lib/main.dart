@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:weathet_app/ui/widgets/app/my_app.dart';
+import 'package:e_weather/ui/widgets/app/my_app.dart';
 
 class MyHttpOverrides extends HttpOverrides {
   @override
