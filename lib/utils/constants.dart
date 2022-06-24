@@ -78,10 +78,10 @@ Widget customListTile({
 }
 
 // API
-// http://api.weatherapi.com/v1/forecast.json?key=66eb35a4c0134ef3a23153944222403&q=Vladivostok&days=1&aqi=no&alerts=no
+// https://api.weatherapi.com/v1/forecast.json?key=YOUR_API_KEY&q=barcelona&days=1&aqi=no&alerts=no
 
 class Constants {
-  static const String WEATHER_APP_ID = '66eb35a4c0134ef3a23153944222403';
+  static const String WEATHER_APP_ID = 'YOUR_API_KEY';
   static const String WEATHER_BASE_SCHEME = 'https://';
   static const String WEATHER_BASE_URL_DOMAIN = 'api.weatherapi.com';
   static const String WEATHER_FORECAST_PATH = '/v1/forecast.json';
